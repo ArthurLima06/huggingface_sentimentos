@@ -11,8 +11,8 @@ def responder(texto: str) -> str:
         return "Entendi. Sinto muito por isso. Vamos resolver juntos: o que exatamente aconteceu?"
     else:
         return "Que bom! Quer dar mais detalhes do que funcionou bem?"
-    while True:
-        texto = input("\nDigite uma frase (ou ENTER para sair): ").strip()
-        if not texto:
-            break
+while True:
+    texto = input("\nDigite uma frase (ou ENTER para sair): ").strip()
+    if not texto:
+        break
     print("Resposta:", responder(texto))
